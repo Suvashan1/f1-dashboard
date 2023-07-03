@@ -9,7 +9,7 @@ def sql_return(request, values):
         ergast = mysql.connector.connect(
             host="localhost",
             user="root",
-            passwd="888000Suva",
+            passwd="",
             database="ergast_f1_copy"
         )
         mycursor = ergast.cursor()
@@ -38,3 +38,4 @@ for driver in drivers:
                     columns = ["Driver", "Lap", "Position", "Time", "Year", "Race", "Code"])
 
 print(results)
+
